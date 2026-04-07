@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --fonte1: Verdana , Geneva, Tahoma, Sans-Serif;
+    --fonte2: Meie Script, cursive;
+    --fonte3: Vend Sans, sans-serif;
+
+}
+
+* {
+margin: 0px;
+padding: 0px;
+font-size: 1em;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; ou */
+    font-variant: small-caps; /* (para letra maiúscula)*/
+    font-family: var(--fonte3);
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 50px; 
+    font-family: var(--fonte3);  
+}
+
+ header a {
+color: white;
+text-decoration: none;
+font-weight: bolder;
+font-family: var(--fonte3);
+ }
+
+footer a{
+color: white;
+text-decoration: none;
+font-weight: bolder;
+font-size: 15px;
+}
+
+header a:hover footer a:hover{
+  text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+ 
+section.normal{
+    background-color: white;
+    color: black; 
+}
+
+section.imagem{
+    background-color: rgb(92, 89, 89);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.74);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.308);
+    display: inline-block;
+    padding: 5px;  
+    text-shadow: 2px 1px 0px black;
+}
+section#img1{
+background-image: url(../imagens/img1.jpg);
+background-size: cover;
+}
+
+section#img2{
+background-image: url(../imagens/img2.jpg);
+background-size: cover;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+}
